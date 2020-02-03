@@ -1,0 +1,135 @@
+@import "~style";
+@import "~reboot";
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+body {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-right);
+/*    background-color: @white;*/
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #ced6e1;
+    /* placeholder字体大小  */
+    font-size: 28px;
+    /* placeholder位置  */
+    text-align: left;
+}
+.content-box {
+    position: fixed;
+    top: 88px;
+    bottom: 100px;
+    //height: 1146px;
+    .am-tabs {
+        display: flex;
+        .am-tabs-content-wrap-animated {
+            flex: 1;
+        }
+    }
+}
+
+.table-reset {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+// 解决 Unable to preventDefault inside passive event listener due to target being treated as passive.
+.am-modal-wrap {
+    touch-action: manipulation;
+    .am-modal-button-group-h::before {
+        height: 0!important;
+    }
+}
+
+.com-btn-warp {
+    padding: 30px 26px;
+    .am-button-primary {
+        color: #fff;
+        border-radius:10px;
+        height: 84px;
+        line-height: 84px;
+    }
+}
+
+.mt90{
+    margin-top: 90px;
+}
+.am-picker-popup-wrap {
+    overflow: inherit;
+}
+
+//后端提示 高度
+.am-toast-text{
+    height: auto;
+}
+
+body, .page{
+    background: @back-color;
+    color: @darker-black;
+    font-size: @font-size-30;
+}
+
+//弹窗样式处理
+.am-toast-notice-content .am-toast-text.am-toast-text-icon{
+    border-radius: 10px;
+    padding: 30px;
+    .am-icon-lg {
+        width: 45px;
+        height: 45px;
+    }
+}
+.am-toast-notice-content .am-toast-text{
+    font-size: 28px;
+}
+.am-modal.am-modal-transparent{
+    width: 540px;
+    .am-modal-content {
+        border-radius: 14px;
+        padding-top: 30px;
+        .am-modal-body{
+            font-size: 28px;
+            color: #111;
+            height: 140px;
+        }
+        .am-modal-footer{
+            border-top: 1px solid #eee;
+            .am-modal-button{
+                font-size: 30px;
+                height: 80px;
+                line-height: 80px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+//量子类
+.pd30{
+    padding: 30px;
+}
+.pdt40{
+    padding-top: 40px;
+}
+.mgb20{
+    margin-bottom: 20px;
+}
+.pdl-r-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.bgcw{
+    background-color: #fff;
+}
+.mgt10{
+    margin-top: 10px;
+}

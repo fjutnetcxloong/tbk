@@ -1,0 +1,93 @@
+@import "~style";
+
+.super-search-container{
+  img{
+    width: 100%;
+  }
+  .super-search-part1{
+    position: relative;
+    .part1-text{
+      width: 100%;
+      position: absolute;
+      z-index: 10;
+      bottom: 40px;
+      text-align: center;
+      .part1-text-search{
+        background-color: #fff;
+        height: 70px;
+        width: 620px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        .super-search-scale{
+          width: 34px;
+          height: 34px;
+          background: url('../../../assets/images/search.png') no-repeat;
+          background-size: 100%;
+        }
+        p{
+          font-size: 24px;
+          outline: none;
+          border: none;
+          color: #999;
+          width: 70%;
+          display: inline-block;
+        }
+        img{
+          width: 30px;
+          margin-left:6px;
+        }
+      }
+      .part1-text-btn{
+        .pdd-btn-img,.jd-btn-img{
+          background: url('../../../assets/images/cjs_banner1.png') no-repeat;
+        }
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &>div{
+          width: 256px;
+          height: 70px;
+          box-sizing: border-box;
+          position: relative;
+          box-shadow: 2px 5px 20px #333333;
+          border-radius: 20px;
+          .am-button::before{
+            border: 0;
+            border-radius: 20px;
+          }
+          .am-button{
+            position: absolute;
+            display: block;
+            color: #a47d53;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            line-height: 66px;
+            font-size: 30px;
+            background-color: unset;
+            top: 0;
+          }
+          .am-button-selected{
+            border: 4px solid #caa656;
+          }
+        }
+      }
+    }
+  }
+  .super-search-part2{
+    position: relative;
+    z-index: 5;
+    margin-top: -50px;
+  }
+  .super-search-part3{
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: -10px;
+    background-color: #525680;
+  }
+}

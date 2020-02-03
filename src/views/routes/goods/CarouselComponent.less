@@ -1,0 +1,25 @@
+@import '~style';
+
+.my-carousel-container{
+  height: 764px;
+  overflow: hidden;
+  position: relative;
+  .my-carousel{
+    position: absolute;
+    transition: all linear 0.5s;
+    touch-action: manipulation;
+    .slider-list{
+      height: 764px !important;
+    }
+    .carousel-item{
+      float: left;
+      box-sizing: border-box;
+      border: 0;
+      width: 100%;
+      img{
+        width: 100%;
+        border: 0;
+      }
+    }
+  }
+}
